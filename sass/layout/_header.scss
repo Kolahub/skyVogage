@@ -1,0 +1,21 @@
+.header {
+    position: relative;
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, .8), rgba($color-primary-dark, .9)),url(../img/city-five.jpg);
+    height: 95vh;
+    background-size: cover;
+    background-attachment: top;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+
+    &__logo {
+        &--pic {
+            height: 7rem;
+            width: 7rem;
+            object-fit: contain;
+            position: absolute;
+            top: 4rem;
+            left: 4rem;
+
+        }
+}
+    
+}
