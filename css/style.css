@@ -74,14 +74,14 @@ body {
 .heading__secondary {
   text-align: center;
   font-size: 3.5rem;
-  background-image: linear-gradient(to right, #00d6f7, #05606e);
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #02dbfd, #05606e);
   -webkit-background-clip: text;
   color: transparent;
   transition: all .4s; }
   .heading__secondary:hover {
     transform: scale(1.2); }
   .heading__secondary--emirates-main {
-    text-transform: uppercase;
     font-weight: 700;
     font-size: 2.5rem;
     display: block;
@@ -89,8 +89,17 @@ body {
     .heading__secondary--emirates-main:hover {
       transform: skewX(20deg); }
 
+.u-center-text {
+  text-align: center; }
+
 .u-margin-top {
   margin-top: 5rem; }
+
+.u-margin-top-big {
+  margin-top: 10rem; }
+
+.u-margin-bottom {
+  margin-bottom: 3rem; }
 
 .btn, .btn:link, .btn:visited {
   display: inline-block;
@@ -99,8 +108,7 @@ body {
   padding: 2rem 6.5rem;
   border-radius: 4.5rem;
   position: relative;
-  transition: all 0.4s;
-  animation: moveInUP 1s ease-out; }
+  transition: all 0.4s; }
 
 .btn:hover {
   transform: translateY(-3rem); }
@@ -131,6 +139,9 @@ body {
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0; }
+
+.btn--animation {
+  animation: moveInUP 1s ease-out; }
 
 .composition {
   margin-top: 3.5rem; }
@@ -168,9 +179,90 @@ body {
   .composition__container:hover .composition__tooltip {
     opacity: 1; }
 
+.flyer {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative; }
+  .flyer__box {
+    color: #c8c7c7;
+    height: 52rem;
+    transition: all 0.8s ease;
+    width: 100%;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    border-radius: 3px; }
+    .flyer__box--front {
+      background-size: cover;
+      overflow: hidden;
+      object-fit: cover;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+      overflow: hidden; }
+      .flyer__box--front--one {
+        background-image: url(../img/flyer-emirates.jpeg); }
+      .flyer__box--front--two {
+        background-image: url(../img/flyer-emirates-two.jpg); }
+      .flyer__box--front--three {
+        background-image: url(../img/flyer-emirates-three.jpg); }
+      .flyer__box--front--four {
+        background-image: url(../img/singapore-flyer-one.jpg); }
+      .flyer__box--front--five {
+        background-image: url(../img/singapore-flyer-two.png); }
+      .flyer__box--front--six {
+        background-image: url(../img/singapore-flyer-three.png); }
+      .flyer__box--front--seven {
+        background-image: url(../img/qater-flyer-one.jpeg); }
+      .flyer__box--front--eight {
+        background-image: url(../img/qater-flyer-two.jpeg); }
+      .flyer__box--front--nine {
+        background-image: url(../img/qater-flyer-three.jpeg); }
+    .flyer__box--back {
+      transform: rotateY(180deg);
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+      position: absolute;
+      top: 0;
+      left: 0; }
+      .flyer__box--back--1 {
+        background-image: linear-gradient(to right bottom, #ec3e3e, #b50808); }
+      .flyer__box--back--2 {
+        background-image: linear-gradient(to right bottom, #3d3dfd, #050598); }
+      .flyer__box--back--3 {
+        background-image: linear-gradient(to right bottom, #f509d9, #530349); }
+    .flyer__box:hover .flyer__box--front {
+      transform: rotateY(-180deg); }
+    .flyer__box:hover .flyer__box--back {
+      transform: rotateY(0); }
+  .flyer__backText {
+    text-transform: uppercase;
+    margin-top: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+  .flyer__text {
+    color: #f6f3f3;
+    font-weight: 700;
+    font-size: 3rem; }
+  .flyer--btn {
+    margin-top: 10rem; }
+
+.Info__box {
+  height: 100%;
+  padding: 3rem 1rem;
+  color: #ebe8e8;
+  box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.2); }
+  .Info__box-one {
+    background-color: #ec3e3e; }
+  .Info__box-two {
+    background-color: #3d3dfd; }
+  .Info__box-three {
+    color: #f6f3f3;
+    background-color: #f509d9; }
+  .Info__box:hover {
+    transform: translateY(-5rem); }
+
 .header {
   position: relative;
-  background-image: linear-gradient(to right bottom, rgba(0, 214, 247, 0.8), rgba(5, 96, 110, 0.9)), url(../img/plane.jpeg);
+  background-image: linear-gradient(to right bottom, rgba(2, 219, 253, 0.8), rgba(5, 96, 110, 0.9)), url(../img/plane.jpeg);
   height: 95vh;
   background-size: cover;
   background-attachment: top;
@@ -196,7 +288,40 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 3rem; }
 
+.grid__Info {
+  max-width: 114rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 3rem;
+  margin: auto; }
+
+.grid__flyer {
+  max-width: 114rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 3rem;
+  margin: auto; }
+
 .topThree {
   padding: 25rem 0;
+  padding-bottom: 0;
   background-color: #ebe8e8;
   margin-top: -25rem; }
+
+.emirates__section {
+  background-color: #f6f3f3;
+  padding: 20rem 0;
+  margin-top: -10rem;
+  transform: skewY(-7deg);
+  margin-top: -10rem;
+  margin-bottom: 10rem; }
+  .emirates__section > * {
+    transform: skewY(7deg); }
+
+.singapore__section {
+  background-color: #ebe8e8;
+  padding: 25rem 0; }
+
+.qater__section {
+  background-color: #f6f3f3;
+  padding: 20rem 0; }

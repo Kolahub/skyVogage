@@ -9,7 +9,7 @@
     border-radius: 4.5rem;
     position: relative;
     transition: all 0.4s;
-    animation: moveInUP 1s ease-out;
+    
   }
   &:hover {
     transform: translateY(-3rem);
@@ -44,5 +44,9 @@
   &:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
+  }
+
+  &--animation {
+    animation: moveInUP 1s ease-out;
   }
 }
