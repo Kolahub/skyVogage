@@ -3,6 +3,7 @@
     &__pic {
         width: 100%;
         object-fit: contain;
+        transition: all .1s;
 
         &--one {
         height: 15rem;
@@ -22,7 +23,7 @@
 
         &--three {
             height: 15rem;
-            object-fit: contain;
+            
 
             &:hover {
                 transform: scale(1.4);

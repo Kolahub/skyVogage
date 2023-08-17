@@ -136,7 +136,8 @@ body {
   margin-top: 3.5rem; }
   .composition__pic {
     width: 100%;
-    object-fit: contain; }
+    object-fit: contain;
+    transition: all .1s; }
     .composition__pic--one {
       height: 15rem; }
       .composition__pic--one:hover {
@@ -146,8 +147,7 @@ body {
       .composition__pic--two:hover {
         transform: scale(1.4); }
     .composition__pic--three {
-      height: 15rem;
-      object-fit: contain; }
+      height: 15rem; }
       .composition__pic--three:hover {
         transform: scale(1.4); }
   .composition__container {
