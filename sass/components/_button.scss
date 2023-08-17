@@ -9,6 +9,7 @@
     border-radius: 4.5rem;
     position: relative;
     transition: all 0.4s;
+    animation: moveInUP 1s ease-out;
   }
   &:hover {
     transform: translateY(-3rem);

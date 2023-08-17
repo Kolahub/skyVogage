@@ -1,0 +1,15 @@
+.grid__topThree {
+    max-width: 114rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 6rem;
+    margin: auto;
+    
+}
+
+.grid__emirates {
+    max-width: 114rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3rem;
+}

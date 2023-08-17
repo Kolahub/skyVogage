@@ -1,0 +1,58 @@
+.composition {
+    margin-top: 3.5rem;
+    &__pic {
+        width: 100%;
+        object-fit: contain;
+
+        &--one {
+        height: 15rem;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+        }
+
+        &--two {
+            height: 15rem;
+
+            &:hover {
+                transform: scale(1.4);
+            }
+        }
+
+        &--three {
+            height: 15rem;
+            object-fit: contain;
+
+            &:hover {
+                transform: scale(1.4);
+            }
+        }
+    }
+    
+    &__container {
+        position: relative;
+        
+    }
+
+    &__container &__tooltip {
+        position: absolute;
+        bottom: -6rem;
+        left: 6rem;
+        text-align: center;
+        width: 60%;
+        margin-left: 8rem;
+        background-color: rgba($color-black, .7);
+        color: $color-white;
+        border-radius: .5rem;
+        padding: .4rem;
+        opacity: 0;
+        pointer-events: none;  
+    }
+
+    &__container:hover &__tooltip {
+        opacity: 1;
+    }
+
+    }
+
