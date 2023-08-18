@@ -28,6 +28,27 @@
     opacity: 1;
     transform: translate(0); } }
 
+/* Wobble Horizontal */
+@keyframes hvr-wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px); }
+  33.3% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px); }
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px); }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px); }
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
 *,
 *::after,
 *::before {
@@ -310,18 +331,18 @@ body {
   margin: auto; }
 
 .footer {
-  height: 95vh;
   padding: 20rem 0;
+  height: 100vh;
   margin: 0 auto;
   background-color: #1e1d1d;
   position: relative; }
   .footer__logo {
-    width: 15rem;
+    width: 10rem;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: 20%; }
+    top: 15%; }
     .footer__logo--pic {
       width: 100%; }
   .footer__item {
@@ -330,16 +351,17 @@ body {
   .footer__list {
     display: block; }
     .footer__list:not(:last-child) {
-      margin-bottom: 1.5rem; }
+      margin-bottom: 2rem; }
   .footer__links, .footer__links:link, .footer__links:visited {
     text-decoration: none;
     display: block;
+    width: 20rem;
     color: #ebe8e8;
     background-image: linear-gradient(90deg, #05606e 0%, #05606e 50%, #02dbfd 50%);
     background-size: 240%;
-    padding: .5rem 2rem;
+    padding: 0.5rem 2rem;
     text-align: center;
-    transition: all .7s; }
+    transition: all 0.7s; }
   .footer__links:hover {
     background-position: 100%;
     color: #f6f3f3;
@@ -372,7 +394,7 @@ body {
     color: #ebe8e8;
     font-size: 1.4rem;
     opacity: 1;
-    transition: all .4s; }
+    transition: all 0.4s; }
   .footer__form--input:placeholder-shown ~ .footer__form--label {
     margin-top: -2rem;
     opacity: 0; }
@@ -384,7 +406,7 @@ body {
     background-size: 240%;
     cursor: pointer;
     border: none;
-    transition: all .7s;
+    transition: all 0.7s;
     text-transform: uppercase;
     font-weight: 600;
     color: #ebe8e8; }
@@ -392,10 +414,71 @@ body {
       outline: none;
       border: none;
       background-position: 100%;
-      color: #f6f3f3;
-      transform: scale(1.2); }
+      color: #f6f3f3; }
     .footer__form--btn:active {
       transform: scale(1) translateY(-1px); }
+  .footer__bio {
+    margin-top: 8rem;
+    position: relative; }
+    .footer__bio--socials {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      .footer__bio--socials--git {
+        display: inline-block;
+        margin-left: 2rem;
+        color: #f6f3f3;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        transition: all 0.4s; }
+        .footer__bio--socials--git:hover {
+          color: #02c5e4;
+          animation-name: hvr-wobble-horizontal;
+          animation-duration: 1s;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: 1; }
+      .footer__bio--socials--tweet {
+        display: inline-block;
+        margin-left: 2rem;
+        color: #f6f3f3;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        transition: all 0.4s; }
+        .footer__bio--socials--tweet:hover {
+          color: #02c5e4;
+          animation-name: hvr-wobble-horizontal;
+          animation-duration: 1s;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: 1; }
+      .footer__bio--socials--linkedin {
+        display: inline-block;
+        margin-left: 2rem;
+        color: #f6f3f3;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        transition: all 0.4s; }
+        .footer__bio--socials--linkedin:hover {
+          color: #02c5e4;
+          animation-name: hvr-wobble-horizontal;
+          animation-duration: 1s;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: 1; }
+    .footer__bio--text {
+      display: inline-block;
+      text-align: center;
+      margin-top: 6rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #ebe8e8; }
 
 .topThree {
   padding: 25rem 0;

@@ -1,128 +1,204 @@
 .footer {
-    height: 95vh;
-    padding: 20rem 0;
-    margin: 0 auto;
-    background-color: $color-black-light;
+  padding: 20rem 0;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: $color-black-light;
+  position: relative;
+
+  &__logo {
+    width: 10rem;
+    @include Center;
+    top: 15%;
+    &--pic {
+      width: 100%;
+    }
+  }
+
+  &__item {
+    list-style-type: none;
+    display: block;
+  }
+
+  &__list {
+    display: block;
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__links {
+    &,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      display: block;
+      width: 20rem;
+      color: $color-grey-light;
+      background-image: linear-gradient(
+        90deg,
+        ($color-primary-dark) 0%,
+        ($color-primary-dark) 50%,
+        ($color-primary-light) 50%
+      );
+      background-size: 240%;
+      padding: 0.5rem 2rem;
+      text-align: center;
+      transition: all 0.7s;
+    }
+
+    &:hover {
+      background-position: 100%;
+      color: $color-white;
+      transform: scale(1.1) translateY(-2px);
+    }
+    &:active {
+      transform: scale(1) translateY(-1px);
+    }
+  }
+
+  &--text {
+    font-size: 2.5rem;
+
+    &-sub {
+      font-size: 1.5rem;
+      max-width: 40rem;
+      margin: auto;
+      color: $color-grey-light;
+    }
+  }
+
+  &__form {
+    &--input {
+      display: inline-block;
+      width: 40rem;
+      padding: 1rem;
+      margin-left: 7rem;
+      margin-top: 2rem;
+
+      &:focus {
+        outline: none;
+        border: solid green 2px !important;
+      }
+
+      &:focus:invalid {
+        border: solid red 2px !important;
+      }
+    }
+
+    &--label {
+      display: block;
+      margin: auto;
+      max-width: 40rem;
+      margin-top: 2rem;
+      color: $color-grey-light;
+      font-size: 1.4rem;
+      opacity: 1;
+      transition: all 0.4s;
+    }
+
+    &--input:placeholder-shown ~ &--label {
+      margin-top: -2rem;
+      opacity: 0;
+    }
+
+    &--btn {
+      display: inline-block;
+      padding: 1rem;
+      width: 8rem;
+      background-image: linear-gradient(
+        90deg,
+        ($color-primary-dark) 0%,
+        ($color-primary-dark) 50%,
+        ($color-primary-light) 50%
+      );
+      background-size: 240%;
+      cursor: pointer;
+      border: none;
+      transition: all 0.7s;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: $color-grey-light;
+
+      &:hover {
+        outline: none;
+        border: none;
+        background-position: 100%;
+        color: $color-white;
+      }
+      &:active {
+        transform: scale(1) translateY(-1px);
+      }
+    }
+  }
+
+  &__bio {
+    margin-top: 8rem;
     position: relative;
 
-    &__logo {
-        width: 15rem;
-        @include Center;
-        top: 20%;
-        &--pic {
-            width: 100%;
-        }
-    }
+    &--socials {
+      @include Center;
 
-    &__item {
-        list-style-type: none;
-        display: block;
-        
-    }
-
-    &__list {
-        display: block;
-        &:not(:last-child) {
-            margin-bottom: 1.5rem;
-        }
-    }
-
-    &__links {
-        &,
-        &:link,
-        &:visited {
-        text-decoration: none;
-        display: block;
-        color: $color-grey-light;
-        background-image: linear-gradient(90deg, ($color-primary-dark)0%, ($color-primary-dark)50%, ($color-primary-light)50%);
-        background-size: 240%;
-        padding:.5rem 2rem;
-        text-align: center;
-        transition: all .7s;
-        }
-
+      &--git {
+        display: inline-block;
+        margin-left: 2rem;
+        color: $color-white;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        transition: all 0.4s;
         &:hover {
-            background-position: 100%;
-            color: $color-white;
-            transform: scale(1.1) translateY(-2px);
+          color: darken($color-primary-light, 5%);
+          animation-name: hvr-wobble-horizontal;
+          animation-duration: 1s;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: 1;
         }
-        &:active {
-            transform: scale(1) translateY(-1px); 
+      }
+
+      &--tweet {
+        display: inline-block;
+        margin-left: 2rem;
+        color: $color-white;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        transition: all 0.4s;
+        &:hover {
+          color: darken($color-primary-light, 5%);
+          animation-name: hvr-wobble-horizontal;
+          animation-duration: 1s;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: 1;
         }
+      }
+
+      &--linkedin {
+        display: inline-block;
+        margin-left: 2rem;
+        color: $color-white;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        transition: all 0.4s;
+        &:hover {
+          color: darken($color-primary-light, 5%);
+          animation-name: hvr-wobble-horizontal;
+          animation-duration: 1s;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: 1;
+        }
+      }
     }
 
-  
     &--text {
-        font-size: 2.5rem;
-
-        &-sub {
-            font-size: 1.5rem;
-            max-width: 40rem;
-            margin: auto;
-            color: $color-grey-light;
-            
-        }
+      display: inline-block;
+      text-align: center;
+      margin-top: 6rem;
+      @include Center;
+      color: $color-grey-light;
     }
-
-    &__form {
-        
-
-        &--input {
-            display:inline-block;
-            width: 40rem;
-            padding: 1rem;
-            margin-left: 7rem;
-            margin-top: 2rem;
-
-            &:focus{
-                outline: none;
-                border: solid green 2px !important;
-            }
-
-            &:focus:invalid {
-                border: solid red 2px !important;
-            }
-        }
-
-        &--label {
-            display: block; 
-            margin: auto;
-            max-width: 40rem;
-            margin-top: 2rem;
-            color: $color-grey-light;
-            font-size: 1.4rem;
-            opacity: 1;
-            transition: all .4s;
-        }
-
-        &--input:placeholder-shown ~ &--label {
-            margin-top: -2rem;
-            opacity: 0;
-        }
-
-        &--btn {
-            display: inline-block; 
-            padding: 1rem;
-            width: 8rem;
-            background-image: linear-gradient(90deg, ($color-primary-dark)0%, ($color-primary-dark)50%, ($color-primary-light)50%);
-            background-size: 240%;
-            cursor: pointer;
-            border: none;
-            transition: all .7s;
-            text-transform: uppercase;
-            font-weight: 600;
-            color: $color-grey-light;
-            &:hover {
-                outline: none;
-                border: none;
-                background-position: 100%;
-                color: $color-white;
-                transform: scale(1.2);
-                
-            }
-            &:active {
-                transform: scale(1) translateY(-1px); 
-            }
-        }
-    }
+  }
 }

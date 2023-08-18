@@ -1,39 +1,38 @@
 .grid__topThree {
-    max-width: 114rem;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    column-gap: 6rem;
-    margin: auto;
-    
+  max-width: 114rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  column-gap: 6rem;
+  margin: auto;
 }
 
 .grid__emirates {
-    max-width: 114rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 3rem;
+  max-width: 114rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 3rem;
 }
 
 .grid__Info {
-    max-width: 114rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 3rem;
-    margin: auto;
+  max-width: 114rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 3rem;
+  margin: auto;
 }
 
 .grid__flyer {
-    max-width: 114rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 3rem;
-    margin: auto;
+  max-width: 114rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 3rem;
+  margin: auto;
 }
 
 .grid__footer {
-    max-width: 120rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 8rem;
-    margin: auto;
+  max-width: 120rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8rem;
+  margin: auto;
 }
