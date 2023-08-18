@@ -29,3 +29,11 @@
     column-gap: 3rem;
     margin: auto;
 }
+
+.grid__footer {
+    max-width: 120rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8rem;
+    margin: auto;
+}
