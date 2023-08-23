@@ -1,9 +1,9 @@
 @keyframes moveInDown {
   0% {
     opacity: 0;
-    transform: translateY(-20rem); }
+    transform: translateY(-4rem); }
   80% {
-    transform: translateX(10rem); }
+    transform: translateX(1rem); }
   100% {
     opacity: 1;
     transform: translate(0); } }
@@ -11,9 +11,9 @@
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(30rem); }
+    transform: translateX(3rem); }
   80% {
-    transform: translateX(-10rem); }
+    transform: translateX(-1rem); }
   100% {
     opacity: 1;
     transform: translate(0); } }
@@ -21,9 +21,9 @@
 @keyframes moveInUP {
   0% {
     opacity: 0;
-    transform: translateY(30rem); }
+    transform: translateY(3rem); }
   80% {
-    transform: translateY(-5rem); }
+    transform: translateY(-1rem); }
   100% {
     opacity: 1;
     transform: translate(0); } }
@@ -60,7 +60,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  position: relative; }
 
 body {
   font-family: "lato", sans-serif;
@@ -281,55 +282,6 @@ body {
   .Info__box:hover {
     transform: translateY(-5rem); }
 
-.header {
-  position: relative;
-  background-image: linear-gradient(to right bottom, rgba(2, 219, 253, 0.8), rgba(5, 96, 110, 0.9)), url(../img/plane.jpeg);
-  height: 95vh;
-  background-size: cover;
-  background-attachment: top;
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); }
-  .header__logo--pic {
-    height: 7rem;
-    width: 7rem;
-    object-fit: contain;
-    position: absolute;
-    top: 4rem;
-    left: 4rem; }
-
-.grid__topThree {
-  max-width: 114rem;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  column-gap: 6rem;
-  margin: auto; }
-
-.grid__emirates {
-  max-width: 114rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 3rem; }
-
-.grid__Info {
-  max-width: 114rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 3rem;
-  margin: auto; }
-
-.grid__flyer {
-  max-width: 114rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 3rem;
-  margin: auto; }
-
-.grid__footer {
-  max-width: 120rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 8rem;
-  margin: auto; }
-
 .footer {
   padding: 20rem 0;
   height: 100vh;
@@ -479,6 +431,97 @@ body {
       left: 50%;
       transform: translate(-50%, -50%);
       color: #ebe8e8; }
+
+.header {
+  position: relative;
+  background-image: linear-gradient(to right bottom, rgba(2, 219, 253, 0.8), rgba(5, 96, 110, 0.9)), url(../img/plane.jpeg);
+  height: 95vh;
+  background-size: cover;
+  background-attachment: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); }
+  .header__logo--pic {
+    height: 7rem;
+    width: 7rem;
+    object-fit: contain;
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+
+.grid__topThree {
+  max-width: 114rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  column-gap: 6rem;
+  margin: auto; }
+
+.grid__emirates {
+  max-width: 114rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 3rem; }
+
+.grid__Info {
+  max-width: 114rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 3rem;
+  margin: auto; }
+
+.grid__flyer {
+  max-width: 114rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 3rem;
+  margin: auto; }
+
+.grid__footer {
+  max-width: 120rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8rem;
+  margin: auto; }
+
+.navigation__checkbox {
+  display: none; }
+
+.navigation__button {
+  background-color: #77d8d8;
+  height: 6rem;
+  width: 6rem;
+  position: fixed;
+  right: 5rem;
+  top: 5rem;
+  display: block;
+  z-index: 10000;
+  transition: all .3s ease; }
+
+.navigation__background {
+  background-image: radial-gradient(#02dbfd, #05606e);
+  height: 6rem;
+  width: 6rem;
+  border-radius: 3rem;
+  position: fixed;
+  right: 5rem;
+  top: 5rem;
+  z-index: 2000; }
+
+.navigation__nav {
+  display: block;
+  margin: auto;
+  z-index: 100000;
+  position: absolute;
+  top: 30rem;
+  left: 10rem;
+  height: 100vh; }
+
+.navigation__list {
+  list-style: none;
+  display: inline-block; }
+
+.navigation__links, .navigation__links:link, .navigation__links:visited {
+  text-decoration: none;
+  color: #f6f3f3;
+  font-size: 4rem; }
 
 .topThree {
   padding: 25rem 0;

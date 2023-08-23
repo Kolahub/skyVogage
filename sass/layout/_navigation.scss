@@ -1,0 +1,69 @@
+.navigation {
+    &__checkbox {
+        display: none;
+    }
+
+    &__button {
+        background-color: rgb(119, 216, 216);
+        height: 6rem;
+        width: 6rem;
+        position: fixed;
+        right: 5rem;
+        top: 5rem;
+        display: block;
+        z-index: 10000;
+        transition: all .3s ease;
+    }
+
+    &__background {
+        background-image: radial-gradient($color-primary-light, $color-primary-dark);
+        height: 6rem;
+        width: 6rem;
+        border-radius: 3rem;
+        position: fixed;
+        right: 5rem;
+        top: 5rem;
+        z-index: 2000;
+    }
+
+    &__nav {
+        display: block;
+        margin: auto;
+        z-index: 100000;
+        position: absolute;
+        top: 30rem;
+        left: 10rem;
+        height: 100vh;
+        // width: 0;
+        // opacity: 0;
+        // visibility: hidden;
+    }
+
+    &__list {
+        list-style: none;
+        display: inline-block;
+    }
+
+    &__items {
+
+    }
+
+    &__links {
+        &,
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: $color-white;
+            font-size: 4rem;
+        }
+    }
+
+    // &__checkbox:checked ~ &__background {
+    //     transform: scale(100);
+    // }
+    // &__checkbox:checked ~ &__nav {
+    //     width: 100%;
+    //     opacity: 1;
+    //     visibility: visible;
+    // }
+}
