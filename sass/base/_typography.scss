@@ -23,6 +23,20 @@ body {
     letter-spacing: 1.2rem;
     color: $color-white;
     animation: moveInDown 1s ease-out;
+
+    @include respond (tab-port) {
+      width: 100rem;
+      display: block;
+      font-size: 4rem;
+    }
+    @include respond (phone) {
+      display: block;
+      font-size: 3rem;
+    }
+    @include respond (phone-port) {
+      display: block;
+      font-size: 2rem;
+    }
   }
   &-sub {
     display: block;
@@ -30,6 +44,20 @@ body {
     letter-spacing: 0.4rem;
     color: $color-white;
     animation: moveInLeft 1s ease-out;
+
+    @include respond (tab-port) {
+      width: 100rem;
+      display: block;
+      font-size: 1.2rem;
+    }
+    @include respond (phone) {
+      display: block;
+      font-size: .9rem;
+    }
+    @include respond (phone-port) {
+      display: block;
+      font-size: .5rem;
+    }
   }
 }
 
@@ -41,6 +69,18 @@ body {
     -webkit-background-clip: text;
     color: transparent;
     transition: all .4s;
+
+    @include respond (tab-port) {
+      font-size: 3rem;
+    }
+    @include respond (phone) {
+      font-size: 2.5rem;
+    }
+    @include respond (phone-port) {
+      display: block;
+      font-size: 2rem;
+    }
+
     &:hover {
         transform: scale(1.2);
     }
@@ -48,10 +88,18 @@ body {
     &--emirates {
         
         &-main {
+          font-size: 2.5;
             font-weight: 700;
-            font-size: 2.5rem;
             display: block;
             transition: all .1s;
+
+            @include respond (tab-port) {
+              font-size: 2.5rem;
+            }
+            @include respond (phone-port) {
+              display: block;
+              font-size: 2rem;
+            }
             &:hover {
               transform: skewX(20deg);
             }

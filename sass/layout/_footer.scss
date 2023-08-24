@@ -5,6 +5,16 @@
   background-color: $color-black-light;
   position: relative;
 
+  @include respond (tab-port) {
+    padding: 15rem 0;
+  }
+  @include respond (phone) {
+    
+  }
+  @include respond (phone-port) {
+    
+  }
+
   &__logo {
     width: 10rem;
     @include Center;

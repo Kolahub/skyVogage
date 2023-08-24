@@ -4,6 +4,16 @@
   grid-template-rows: 1fr 1fr 1fr 1fr;
   column-gap: 6rem;
   margin: auto;
+
+  @include respond (tab-port) {
+    max-width: 80rem;
+  }
+  @include respond (phone) {
+    
+  }
+  @include respond (phone-port) {
+    
+  }
 }
 
 .grid__emirates {
@@ -19,6 +29,18 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 3rem;
   margin: auto;
+
+  @include respond (tab-port) {
+    max-width: 80rem;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3rem;
+  }
+  @include respond (phone) {
+    max-width: 40rem;
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+
 }
 
 .grid__flyer {
@@ -27,6 +49,16 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 3rem;
   margin: auto;
+
+  @include respond (tab-port) {
+    max-width: 80rem;
+  }
+  @include respond (phone) {
+    
+  }
+  @include respond (phone-port) {
+    
+  }
 }
 
 .grid__footer {
@@ -35,4 +67,14 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 8rem;
   margin: auto;
+
+  @include respond (tab-port) {
+    max-width: 80rem;
+  }
+  @include respond (phone) {
+    
+  }
+  @include respond (phone-port) {
+    
+  }
 }

@@ -58,10 +58,18 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
-  box-sizing: border-box;
-  position: relative; }
+  box-sizing: border-box; }
 
 body {
   font-family: "lato", sans-serif;
@@ -86,12 +94,38 @@ body {
     letter-spacing: 1.2rem;
     color: #f6f3f3;
     animation: moveInDown 1s ease-out; }
+    @media (max-width: 56.25em) {
+      .heading__primary-main {
+        width: 100rem;
+        display: block;
+        font-size: 4rem; } }
+    @media (max-width: 37.5em) {
+      .heading__primary-main {
+        display: block;
+        font-size: 3rem; } }
+    @media (max-width: 28.125em) {
+      .heading__primary-main {
+        display: block;
+        font-size: 2rem; } }
   .heading__primary-sub {
     display: block;
     font-size: 1.5rem;
     letter-spacing: 0.4rem;
     color: #f6f3f3;
     animation: moveInLeft 1s ease-out; }
+    @media (max-width: 56.25em) {
+      .heading__primary-sub {
+        width: 100rem;
+        display: block;
+        font-size: 1.2rem; } }
+    @media (max-width: 37.5em) {
+      .heading__primary-sub {
+        display: block;
+        font-size: .9rem; } }
+    @media (max-width: 28.125em) {
+      .heading__primary-sub {
+        display: block;
+        font-size: .5rem; } }
 
 .heading__secondary {
   text-align: center;
@@ -101,13 +135,30 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   transition: all .4s; }
+  @media (max-width: 56.25em) {
+    .heading__secondary {
+      font-size: 3rem; } }
+  @media (max-width: 37.5em) {
+    .heading__secondary {
+      font-size: 2.5rem; } }
+  @media (max-width: 28.125em) {
+    .heading__secondary {
+      display: block;
+      font-size: 2rem; } }
   .heading__secondary:hover {
     transform: scale(1.2); }
   .heading__secondary--emirates-main {
+    font-size: 2.5;
     font-weight: 700;
-    font-size: 2.5rem;
     display: block;
     transition: all .1s; }
+    @media (max-width: 56.25em) {
+      .heading__secondary--emirates-main {
+        font-size: 2.5rem; } }
+    @media (max-width: 28.125em) {
+      .heading__secondary--emirates-main {
+        display: block;
+        font-size: 2rem; } }
     .heading__secondary--emirates-main:hover {
       transform: skewX(20deg); }
 
@@ -272,6 +323,9 @@ body {
   padding: 3rem 1rem;
   color: #ebe8e8;
   box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.2); }
+  @media (max-width: 56.25em) {
+    .Info__box {
+      padding: 1.5rem 1rem; } }
   .Info__box-one {
     background-color: #ec3e3e; }
   .Info__box-two {
@@ -281,6 +335,9 @@ body {
     background-color: #f509d9; }
   .Info__box:hover {
     transform: translateY(-5rem); }
+    @media (max-width: 56.25em) {
+      .Info__box:hover {
+        transform: translate(0) scale(1.1); } }
 
 .footer {
   padding: 20rem 0;
@@ -288,6 +345,9 @@ body {
   margin: 0 auto;
   background-color: #1e1d1d;
   position: relative; }
+  @media (max-width: 56.25em) {
+    .footer {
+      padding: 15rem 0; } }
   .footer__logo {
     width: 10rem;
     position: absolute;
@@ -453,6 +513,9 @@ body {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   column-gap: 6rem;
   margin: auto; }
+  @media (max-width: 56.25em) {
+    .grid__topThree {
+      max-width: 80rem; } }
 
 .grid__emirates {
   max-width: 114rem;
@@ -466,6 +529,16 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 3rem;
   margin: auto; }
+  @media (max-width: 56.25em) {
+    .grid__Info {
+      max-width: 80rem;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 3rem; } }
+  @media (max-width: 37.5em) {
+    .grid__Info {
+      max-width: 40rem;
+      grid-template-columns: 1fr;
+      row-gap: 3rem; } }
 
 .grid__flyer {
   max-width: 114rem;
@@ -473,6 +546,9 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 3rem;
   margin: auto; }
+  @media (max-width: 56.25em) {
+    .grid__flyer {
+      max-width: 80rem; } }
 
 .grid__footer {
   max-width: 120rem;
@@ -480,6 +556,9 @@ body {
   grid-template-columns: 1fr 1fr;
   column-gap: 8rem;
   margin: auto; }
+  @media (max-width: 56.25em) {
+    .grid__footer {
+      max-width: 80rem; } }
 
 .navigation__checkbox {
   display: none; }
