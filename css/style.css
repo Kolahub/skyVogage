@@ -69,14 +69,20 @@ html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 2rem; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
+  @media (max-width: 37.5em) {
+    body {
+      padding: 0; } }
 
 body {
   font-family: "lato", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
-  line-height: 1.7;
-  padding: 2rem; }
+  line-height: 1.7; }
 
 .heading__primary {
   display: flex;
@@ -340,14 +346,10 @@ body {
         transform: translate(0) scale(1.1); } }
 
 .footer {
-  padding: 20rem 0;
-  height: 100vh;
+  padding: 25rem 0;
   margin: 0 auto;
   background-color: #1e1d1d;
   position: relative; }
-  @media (max-width: 56.25em) {
-    .footer {
-      padding: 15rem 0; } }
   .footer__logo {
     width: 10rem;
     position: absolute;
@@ -387,17 +389,12 @@ body {
     font-size: 2.5rem; }
     @media (max-width: 56.25em) {
       .footer--text {
-        font-size: 2rem;
-        margin-left: -7rem; } }
+        font-size: 2.2rem; } }
     .footer--text-sub {
       font-size: 1.5rem;
       max-width: 40rem;
       margin: auto;
       color: #ebe8e8; }
-      @media (max-width: 56.25em) {
-        .footer--text-sub {
-          font-size: 2rem;
-          margin-left: -7rem; } }
   .footer__form--input {
     display: inline-block;
     width: 40rem;
@@ -406,8 +403,10 @@ body {
     margin-top: 2rem; }
     @media (max-width: 56.25em) {
       .footer__form--input {
-        width: 30rem;
-        margin-left: -5rem; } }
+        margin-left: 0; } }
+    @media (max-width: 37.5em) {
+      .footer__form--input {
+        width: 20rem; } }
     .footer__form--input:focus {
       outline: none;
       border: solid green 2px !important; }
@@ -422,6 +421,12 @@ body {
     font-size: 1.4rem;
     opacity: 1;
     transition: all 0.4s; }
+    @media (max-width: 56.25em) {
+      .footer__form--label {
+        display: inline; } }
+    @media (max-width: 37.5em) {
+      .footer__form--label {
+        width: 12rem; } }
   .footer__form--input:placeholder-shown ~ .footer__form--label {
     margin-top: -2rem;
     opacity: 0; }
@@ -446,7 +451,12 @@ body {
       transform: scale(1) translateY(-1px); }
     @media (max-width: 56.25em) {
       .footer__form--btn {
-        width: 10rem; } }
+        width: 10rem;
+        margin-top: 1.5rem;
+        margin-left: 30rem; } }
+    @media (max-width: 37.5em) {
+      .footer__form--btn {
+        width: 12rem; } }
   .footer__bio {
     margin-top: 8rem;
     position: relative; }
@@ -577,6 +587,11 @@ body {
   @media (max-width: 56.25em) {
     .grid__footer {
       max-width: 80rem; } }
+  @media (max-width: 37.5em) {
+    .grid__footer {
+      max-width: 30rem;
+      grid-template-columns: 1fr;
+      row-gap: 8rem; } }
 
 .navigation__checkbox {
   display: none; }
