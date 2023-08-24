@@ -81,7 +81,7 @@
     font-size: 2.5rem;
 
     @include respond (tab-port) {
-      font-size: 2.2rem;
+      
     }
     @include respond (phone) {
       
@@ -117,12 +117,12 @@
       margin-top: 2rem;
 
       @include respond (tab-port) {
-        margin-left: 0;
+        margin-left: -2rem;
        
        
       }
       @include respond (phone) {
-        width: 20rem;
+       
         
       }
       @include respond (phone-port) {
@@ -150,11 +150,11 @@
       transition: all 0.4s;
 
       @include respond (tab-port) {
-        display: inline;
+        
        
       }
       @include respond (phone) {
-        width: 12rem;
+        
       }
       @include respond (phone-port) {
         
@@ -195,13 +195,11 @@
       }
 
       @include respond (tab-port) {
-        width: 10rem;
-        margin-top: 1.5rem;
-        margin-left: 30rem;
-       
+       font-size: 1.5rem;
+       width: 10rem;
       }
       @include respond (phone) {
-        width: 12rem;
+
       }
       @include respond (phone-port) {
         
