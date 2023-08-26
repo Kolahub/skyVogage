@@ -17,6 +17,10 @@ body {
   transform: translate(-50%, -50%);
   text-transform: uppercase;
 
+  @include respond (phone) { 
+    width: 45rem;
+  }
+
   &-main {
     display: block;
     font-size: 5rem;
@@ -25,7 +29,7 @@ body {
     animation: moveInDown 1s ease-out;
 
     @include respond (tab-land) {
-      font-size: 3rem;
+      font-size: 4rem;
       letter-spacing: .3rem;
     }
     // @include respond (phone) {
@@ -41,7 +45,7 @@ body {
     animation: moveInLeft 1s ease-out;
 
     @include respond (tab-land) {
-      font-size: 1rem;
+      font-size: 1.2rem;
       letter-spacing: .1rem;
     }
     // @include respond (phone) {
