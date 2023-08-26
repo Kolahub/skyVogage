@@ -51,7 +51,8 @@
   margin: auto;
 
   @include respond (tab-port) {
-    max-width: 80rem;
+    max-width: 50rem;
+    grid-template-columns: 1fr;
   }
   @include respond (phone) {
     
