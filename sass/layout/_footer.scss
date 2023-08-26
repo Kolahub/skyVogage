@@ -122,8 +122,7 @@
        
       }
       @include respond (phone) {
-       
-        
+        transform: scale(.8);
       }
       @include respond (phone-port) {
         
@@ -199,7 +198,7 @@
        width: 10rem;
       }
       @include respond (phone) {
-
+        transform: scale(.8);
       }
       @include respond (phone-port) {
         
@@ -213,6 +212,9 @@
 
     &--socials {
       @include Center;
+      @include respond(tab-port) {
+        margin-top: -3rem;
+      }
 
       &--git {
         display: inline-block;

@@ -7,7 +7,8 @@
       color: #c8c7c7;
       height: 52rem;
       transition: all 0.8s ease;
-      
+      // position: absolute;
+     
       width: 100%;
       transform-style: preserve-3d;
       backface-visibility: hidden;
@@ -18,7 +19,6 @@
         overflow: hidden;
         object-fit: cover;
         box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
-        overflow: hidden;
         &--one {
             background-image: url(../img/flyer-emirates.jpeg);
         }
@@ -91,12 +91,13 @@
       } 
     }
     &__backText {
-        text-transform: uppercase;
-        margin-top: 20rem;
-        display: flex; 
-        flex-direction:  column;
-        justify-content: space-between;
-        align-items: center;
+      text-transform: uppercase;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      width: 95%;
      }
  
      &__text {
@@ -108,4 +109,43 @@
      &--btn {
          margin-top: 10rem;
      }  
-}   
+   
+
+@media only screen and (max-width:56.25em),
+only screen and (hover: none) {
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+  &__box {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+    &--front {
+      height: 73rem;
+      background-size: cover;
+      overflow: hidden;
+      object-fit: cover;
+}
+
+    &--back {
+      transform: rotateY(0);
+    }
+    &:hover &--front {
+      transform: rotateY(0);
+    }
+  }
+
+  &__backText {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0);
+    width: 100%;
+    padding: 7rem 4rem 4rem 7rem;
+  }
+  // &__text {
+  //   font-size: 1.5rem;
+  // }
+}
+}

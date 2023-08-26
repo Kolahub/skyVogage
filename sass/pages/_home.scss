@@ -3,6 +3,11 @@
     padding-bottom: 0;
     background-color: $color-grey-light;
     margin-top: -25rem;
+
+    @include respond (tab-port) {
+        margin-top: -35rem;
+        padding: 35rem 0;
+    }
 }
 
 .emirates__section {
@@ -14,6 +19,10 @@
     margin-bottom: 10rem;
     & > * {
         transform: skewY(7deg);  
+    }
+
+    @include respond (tab-port) {
+        padding: 10rem 0;
     }
 }
 
