@@ -6,7 +6,11 @@
 
     @include respond (tab-port) {
         margin-top: -35rem;
-        padding: 35rem 0;
+        padding: 35rem 0 0 0;
+    }
+    @include respond (phone-port) {
+        margin-top: -30rem;
+        margin-bottom: -50rem;
     }
 }
 

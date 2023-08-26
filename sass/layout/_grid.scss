@@ -69,7 +69,8 @@
     max-width: 55rem;
   }
   @include respond (phone-port) {
-    
+    transform: scale(.85);
+    margin-top: -30rem;
   }
 }
 

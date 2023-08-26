@@ -122,10 +122,10 @@
        
       }
       @include respond (phone) {
-        transform: scale(.8);
+        width: 35rem;
       }
       @include respond (phone-port) {
-        
+        width: 30rem;
       }
 
       &:focus {
@@ -198,7 +198,7 @@
        width: 10rem;
       }
       @include respond (phone) {
-        transform: scale(.8);
+        
       }
       @include respond (phone-port) {
         

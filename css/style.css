@@ -283,10 +283,7 @@ body {
         height: auto;
         position: relative; }
         .flyer__box--front {
-          height: 73rem;
-          background-size: cover;
-          overflow: hidden;
-          object-fit: cover; }
+          height: 70rem; }
         .flyer__box--back {
           transform: rotateY(0); }
         .flyer__box:hover .flyer__box--front {
@@ -378,7 +375,10 @@ body {
         margin-left: -2rem; } }
     @media (max-width: 37.5em) {
       .footer__form--input {
-        transform: scale(0.8); } }
+        width: 35rem; } }
+    @media (max-width: 28.125em) {
+      .footer__form--input {
+        width: 30rem; } }
     .footer__form--input:focus {
       outline: none;
       border: solid green 2px !important; }
@@ -419,9 +419,6 @@ body {
       .footer__form--btn {
         font-size: 1.5rem;
         width: 10rem; } }
-    @media (max-width: 37.5em) {
-      .footer__form--btn {
-        transform: scale(0.8); } }
   .footer__bio {
     margin-top: 8rem;
     position: relative; }
@@ -563,6 +560,10 @@ body {
   @media (max-width: 37.5em) {
     .grid__flyer {
       max-width: 55rem; } }
+  @media (max-width: 28.125em) {
+    .grid__flyer {
+      transform: scale(0.85);
+      margin-top: -30rem; } }
 
 .grid__footer {
   max-width: 120rem;
@@ -726,7 +727,11 @@ body {
   @media (max-width: 56.25em) {
     .topThree {
       margin-top: -35rem;
-      padding: 35rem 0; } }
+      padding: 35rem 0 0 0; } }
+  @media (max-width: 28.125em) {
+    .topThree {
+      margin-top: -30rem;
+      margin-bottom: -50rem; } }
 
 .emirates__section {
   background-color: #f6f3f3;
